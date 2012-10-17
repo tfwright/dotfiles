@@ -1,0 +1,16 @@
+[user]
+	name = Thomas Floyd Wright
+	email = tfwright@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[color]
+	diff = auto
+[push]
+	default = tracking
+[branch]
+	autosetupmerge = always
+[credential]
+	helper = osxkeychain
