@@ -18,3 +18,6 @@
 	autosetupmerge = always
 [credential]
 	helper = osxkeychain
+[core]
+	excludes file = ~/.gitignore-global
+	quotepath = false
