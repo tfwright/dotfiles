@@ -15,11 +15,9 @@
 	ri = rebase --interactive --autosquash
 
 	# log
-	l = log --graph --date=short
+	l = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
 	changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-	short = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
 	changelog = log --pretty=format:\" * %s\"
-	shortnocolor = log --pretty=format:\"%h %cr %cn %s\"
 [color]
 	diff = auto
 [push]
