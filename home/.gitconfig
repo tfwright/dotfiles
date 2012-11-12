@@ -10,9 +10,9 @@
 	compare      = !hub compare $(git branch-name)
 	pull-request = !hub pull-request
 	branch-name  = !git symbolic-ref HEAD | sed 's|refs/heads/||g'
-	fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\" && git ri --autosquash' -
-	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\" && git ri --autosquash' -
-	ri = rebase --interactive
+	fixup = !sh -c 'git commit -m \"fixup! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	squash = !sh -c 'git commit -m \"squash! $(git log -1 --format='\\''%s'\\'' $@)\"' -
+	ri = rebase --interactive --autosquash
 
 	# log
 	l = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\"
