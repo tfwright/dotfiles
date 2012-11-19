@@ -6,6 +6,8 @@
 	ci = commit
 	st = status
 	br = branch
+	p  = pull -p
+
 	browse       = !hub browse  -- tree/$(git branch-name)
 	compare      = !hub compare $(git branch-name)
 	pull-request = !hub pull-request
