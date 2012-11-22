@@ -5,7 +5,7 @@
 	# common
 	co = checkout
 	ci = commit
-	st = status
+	st = status -s
 	br = branch
 	p  = pull -p
 
