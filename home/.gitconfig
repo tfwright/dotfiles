@@ -9,6 +9,11 @@
 	br = branch
 	p  = pull -p
 
+	# stash
+	sl = stash list
+	sa = stash apply
+	ss = stash save
+
 	# search
 	f = "!git ls-files | grep -i"
 	gr = grep -Ii
