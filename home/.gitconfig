@@ -9,6 +9,10 @@
 	br = branch
 	p  = pull -p
 
+	# search
+	f = "!git ls-files | grep -i"
+	gr = grep -Ii
+
 	# gem install hub
 	browse       = !hub browse  -- tree/$(git branch-name)
 	compare      = !hub compare $(git branch-name)
