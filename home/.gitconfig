@@ -4,10 +4,11 @@
 [alias]
 	# common
 	co = checkout
-	ci = commit
+	ci = commit -a -m
 	st = status -s
 	br = branch
 	p  = pull -p
+        fix = commit -a --fixup
 
 	# stash
 	sl = stash list
