@@ -28,9 +28,8 @@
 	ri           = rebase --interactive --autosquash
 
 	# log
-	l = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" -10
-	changes = log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" --name-status
-	changelog = log --pretty=format:\" * %s\"
+        l = "!git --no-pager log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" -10"
+        changelog = log --no-merges --pretty=format:\"%cn * %s\"
 [color]
 	diff = auto
 [push]
