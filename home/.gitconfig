@@ -25,8 +25,7 @@
 	pull-request = !hub pull-request
 
 	branch-name     = !git symbolic-ref HEAD | sed 's|refs/heads/||g'
-	oldest-ancestor = !zsh -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
-	ri              = !git rebase --interactive --autosquash $(git oldest-ancestor)
+	ri              = !git rebase --interactive --autosquash $(git merge-base head master)
 
 	# log
         l = "!git --no-pager log --pretty=format:\"%h %cr %cn %Cgreen%s%Creset\" -10"
