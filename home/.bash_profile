@@ -2,6 +2,7 @@
 . ~/.bash_local
 
 # rbenv init
+export PATH="$HOME/.rbenv/bin:$PATH"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Prepend local path for homebrew
@@ -25,10 +26,10 @@ function parse_git_dirty {
   echo "$(parse_git_added)$(parse_git_modified)$(parse_git_deleted)"
 }
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/\(\1$(parse_git_dirty)\)/"
 }
 function parse_ruby_version {
   echo $RUBY_VERSION | sed -e "s/^ruby\-//"
 }
 
-PS1='\[\033[01;34m\]\w\[\033[00m\]$(parse_git_branch)$ '
+PS1='[\u@\H]\[\033[01;34m\]\w\[\033[00m\]$(parse_git_branch)$ '
