@@ -1,0 +1,32 @@
+{
+    "imports": [
+        "/default.json"
+    ],
+    "preferences": {
+        "theme": "tomorrow_night",
+        "tabSize": 2,
+        "trimWhitespaceOnSave": true,
+        "globalAutoRevert": true
+    },
+    "modes": {},
+    "keys": {
+        "Edit:Block Outdent": {
+            "mac": "Command-["
+        },
+        "Edit:Block Indent": {
+            "mac": "Command-]"
+        },
+        "Find:Next Instance Of Identifier": {
+            "mac": "Command->",
+            "win": "Ctrl->"
+        },
+        "Find:Previous Instance Of Identifier": {
+            "mac": "Command-<",
+            "win": "Ctrl-<"
+        }
+    },
+    "commands": {},
+    "handlers": {},
+    "themes": {},
+    "packages": []
+}
