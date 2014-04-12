@@ -6,7 +6,8 @@
         "theme": "tomorrow_night",
         "tabSize": 2,
         "trimWhitespaceOnSave": true,
-        "globalAutoRevert": true
+        "globalAutoRevert": true,
+        "printMarginColumn": 100
     },
     "modes": {},
     "keys": {
