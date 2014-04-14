@@ -40,4 +40,3 @@
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore-global
-	editor = atom --wait
