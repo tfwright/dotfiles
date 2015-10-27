@@ -1,12 +1,7 @@
-# import local configs
-. ~/.bash_local
-
-# rbenv init
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Prepend local path for homebrew
-export PATH="/usr/local/bin:$PATH"
+# import local configs if present
+if [ -f ~/.bash_local ]; then
+   source ~/.bash_local
+fi
 
 # Better history
 export HISTCONTROL=erasedups
