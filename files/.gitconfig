@@ -40,3 +40,4 @@
 	helper = osxkeychain
 [core]
 	excludesfile = ~/.gitignore-global
+	editor = vi
