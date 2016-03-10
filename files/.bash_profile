@@ -3,6 +3,10 @@ if [ -f ~/.bash_local ]; then
    source ~/.bash_local
 fi
 
+if [ -f ~/.bashrc ]; then 
+    source ~/.bashrc 
+fi
+
 # Better history
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
